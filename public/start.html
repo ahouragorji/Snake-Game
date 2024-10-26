@@ -8,8 +8,25 @@
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to the Snake Game!</h1>
-        <button onclick="window.location.href='play.html'">Start Playing</button>
+        <h1 id="message">Welcome to the Snake Game!</h1>
+        <div id="buttons">
+        <div class="buttonScore">
+        <button onclick="window.location.href='play.html'">game1</button>
+        <label id="score1"> score:0</label>
+        </div>
+        <div class="buttonScore">
+        <button onclick="window.location.href='play2.html'">game2</button>
+        <label id="score2"> score:0</label>
+        </div>
+        </div>
     </div>
 </body>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const score = localStorage.getItem('score1');
+    if (score) {
+        document.getElementById('score1').textContent = `score: ${score}`;        
+    }
+});
+</script>
 </html>

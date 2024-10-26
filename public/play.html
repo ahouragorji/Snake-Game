@@ -7,11 +7,19 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="game-container" width="600" height="400">
+<div id="customAlert" class="custom-alert">
+    <p id="alertMessage">This is your custom alert message!</p>
+    <div id="alertButtons">
+        <button onclick="replay()">Replay</button>
+        <button onclick="home()">Home</button>
+    </div>
+</div>
+
+    <div class="game-container" >
         <div class="game-info">
             <p>Level: <span id="level">1</span></p>
             <p>Time: <span id="time">60</span> seconds</p>
-            <p>Stops: <span id="stops">0</span></p>
+            <p><button id="stops">⏸️</button></p>
             <p>Score: <span id="score">0</span></p>
         </div>
         <canvas id="gameCanvas" width="600" height="400"></canvas>

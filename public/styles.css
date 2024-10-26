@@ -4,7 +4,7 @@ body {
     align-items: flex-start;
     height: 100vh;
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family:'Courier New', Courier, monospace;
     background-color: #333;
     color: white;
 }
@@ -39,26 +39,34 @@ button:hover {
     max-height: 400px;
     display: flex;
     flex-direction: column;
-    margin: 50px 10px;
+    margin: 100px 10px;
 }
 
 .game-info {
     padding: 0 10px;
+    font-family: 'Courier New', Courier, monospace;
     flex: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: solid 2px gray;
-    border-radius : 2px;
+    background-color: #1d1d1d;
+    border: solid 2px #252525;
+    border-radius : 10px;
+    width: 80%;
+    box-sizing: border-box;
+    padding:0 20px;
+    margin-bottom: 10px;
+
 
 }
 
 /* Game Canvas */
 #gameCanvas {
-    border: solid 1px black;
-
+    border: solid 1px rgb(31, 31, 31);
+    background-color: #3a3a3a;
     flex: 3;
     width: 100%;
+    border-radius: 8px;
 }
 
 /* Container and Button Layout */
@@ -92,14 +100,13 @@ button:hover {
     background: none;
 }
 
-/* Custom Alert */
 .custom-alert {
     display: none;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80vw; /* Responsive width */
+    width: 80vw; 
     max-width: 300px;
     background-color: white;
     color: black;
@@ -169,4 +176,8 @@ button:hover {
     #message {
         font-size: 1rem;
     }
+}
+
+#score1, #score2{
+margin-top: 2rem;
 }

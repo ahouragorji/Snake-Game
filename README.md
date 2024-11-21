@@ -8,7 +8,7 @@
 - ⏱️ **Challenge Yourself:** Increase your speed and accuracy as the game progresses.
 
 ## How to Play
-1. Open the game in your web browser.
+1. Open the game in your web browser. (Use npm install and node server.js)
 2. Worms will appear and start moving toward the targets.
 3. Click on the worms to destroy them before they reach their destination.
 4. Protect all targets to win; let too many worms through, and it's game over!
